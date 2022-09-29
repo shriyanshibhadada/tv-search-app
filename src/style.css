@@ -1,0 +1,200 @@
+/**
+* Template Name: MyPortfolio - v4.3.0
+* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i');
+
+div {
+    font-family: "Inconsolata", monospace;
+    color: #0d1e2d;
+  }
+  
+  a {
+    color: #777;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #000;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+
+  .search {
+    margin-top: 2%;
+  }
+  .item {
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+
+  .item .item-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .item .item-wrap:after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+  }
+  
+  .item .item-wrap img {
+    transition: .3s transform ease;
+    transform: scale(1);
+    width: 100%;
+  }
+  
+  .item .item-wrap > .work-info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: .3s all ease;
+  }
+  
+  .item .item-wrap > .work-info h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  
+  .item .item-wrap > .work-info span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+  
+  .item .item-wrap:hover {
+    text-decoration: none;
+  }
+  
+  .item .item-wrap:hover img {
+    transform: scale(1.05);
+  }
+  
+  .item .item-wrap:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .item .item-wrap:hover .work-info {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  .h3 {
+    font-size: 20px;
+  }
+  
+  .h4 {
+    font-size: 16px;
+  }
+  
+  .heading {
+    font-size: 28px;
+  }
+  
+  
+
+  .sticky-content {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* required */
+  }
+  
+  .list-line li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .list-line li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .7rem;
+    width: 10px;
+    height: 2px;
+    background: #000;
+  }
+  
+  .form-control {
+    border-radius: 0;
+    background: #f8f9fa;
+    border: 1px solid transparent;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  
+  .form-control:active, .form-control:focus {
+    background: #eff1f4;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+  }
+  
+  
+ 
+ 
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  /* Custom Navmenu */
+  .custom-navmenu {
+    background: #0d1e2d;
+  }
+  
+
+  .navbar {
+    margin-top: 2%;
+  }
+  /* Custom Navbar */
+  .custom-navbar {
+    padding-top: 50px;
+    width: 100%;
+  }
+  
+  @media (max-width: 780px) {
+    .custom-navbar > .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  
+  .custom-navbar .navbar-brand {
+    font-size: 1.7rem;
+  }
+  
+  
