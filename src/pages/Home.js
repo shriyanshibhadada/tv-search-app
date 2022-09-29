@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "../components/Navbar";
 import Content from "../components/Content";
 import Search from "../components/Search";
 import { useDispatch } from "react-redux";
@@ -25,6 +24,7 @@ function App() {
 
   function handleChange(event) {
     setSearch(event.target.value);
+    setQuery(event.target.value);
   }
 
   function submitQuery(event) {

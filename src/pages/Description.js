@@ -10,7 +10,7 @@ function Description() {
   const showList = useSelector((state) => state);
 
   const show = showList.find((o) => o.show.id == showID);
-  console.log(show);
+  // console.log(show);
   const goBack = () => {
     navigate("/");
   };
